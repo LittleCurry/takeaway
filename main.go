@@ -12,7 +12,8 @@ import (
 func init() {
 	driver.RedisInit("127.0.0.1:6379", 0)
 	//driver.OrmInit("localhost:3306/takeaway")
-	driver.OrmInit("root:1qa!QAZ@tcp(127.0.0.1:3306)/takeaway?charset=utf8")
+	//driver.OrmInit("root:1qa!QAZ@tcp(127.0.0.1:3306)/takeaway?charset=utf8")
+	driver.OrmInit("root:1qa!QAZ@tcp(localhost:3306)/takeaway?charset=utf8")
 }
 
 func main() {
