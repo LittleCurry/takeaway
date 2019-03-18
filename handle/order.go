@@ -49,6 +49,7 @@ func AddOrder(c *gin.Context) {
 func OrderInfo(c *gin.Context) {
 	order := model.Order{}
 	orderId := c.Query("order_id")
+	fmt.Println("orderId:", orderId)
 	_, err := driver.MySQL().Where("order_id=?", orderId).Get(&order)
 	if err != nil {
 		fmt.Println("err:", err)
