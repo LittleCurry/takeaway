@@ -3,10 +3,10 @@ package globals
 import (
 	"github.com/gin-gonic/gin"
 	"fmt"
-	"gitlab.com/SiivaVideoStudio/cloud_server/misc/driver"
 	"strings"
 	"net/http"
-	"gitlab.com/SiivaVideoStudio/cloud_server/misc/err_msg"
+	"github.com/LittleCurry/takeaway/misc/err_msg"
+	"github.com/LittleCurry/takeaway/misc/driver"
 )
 
 func KeyAuth() gin.HandlerFunc {
