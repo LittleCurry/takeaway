@@ -4,14 +4,14 @@ import (
 	"time"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	//"github.com/LittleCurry/takeaway/misc/driver"
+	"github.com/LittleCurry/takeaway/misc/driver"
 	"github.com/LittleCurry/takeaway/misc/globals"
 	"github.com/LittleCurry/takeaway/handle"
 )
 
 func init() {
-	//driver.RedisInit("127.0.0.1:6379", 0)
-	//driver.OrmInit("localhost:27017/takeaway")
+	driver.RedisInit("127.0.0.1:6379", 0)
+	driver.OrmInit("localhost:27017/takeaway")
 }
 
 func main() {
@@ -22,7 +22,7 @@ func main() {
 	router := gin.Default() //获得路由实例
 	router.Use(globals.Cors())
 
-	router.GET("/test", handle.Test)
+	//router.GET("/test", handle.Test)
 
 	user := router.Group("/user")
 	{
