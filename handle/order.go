@@ -4,12 +4,13 @@ import (
 	"github.com/jinzhu/copier"
 	"time"
 	"github.com/gin-gonic/gin"
-	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/vm"
 	"fmt"
 	"net/http"
-	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/misc/err_msg"
-	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/misc/model"
-	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/misc/driver"
+
+	"github.com/LittleCurry/takeaway/vm"
+	"github.com/LittleCurry/takeaway/misc/err_msg"
+	"github.com/LittleCurry/takeaway/misc/model"
+	"github.com/LittleCurry/takeaway/misc/driver"
 )
 
 func AddOrder(c *gin.Context) {

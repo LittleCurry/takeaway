@@ -3,15 +3,15 @@ package handle
 import (
 	"time"
 	"github.com/gin-gonic/gin"
-	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/vm"
 	"fmt"
 	"net/http"
-	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/misc/model"
-	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/misc/driver"
-	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/misc/globals"
 	"strconv"
 	"github.com/jinzhu/copier"
-	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/misc/err_msg"
+	"github.com/LittleCurry/takeaway/vm"
+	"github.com/LittleCurry/takeaway/misc/err_msg"
+	"github.com/LittleCurry/takeaway/misc/model"
+	"github.com/LittleCurry/takeaway/misc/driver"
+	"github.com/LittleCurry/takeaway/misc/globals"
 )
 
 func AddUser(c *gin.Context) {
