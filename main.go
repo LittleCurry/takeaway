@@ -4,9 +4,9 @@ import (
 	"time"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/takeaway/misc/driver"
-	"github.com/takeaway/misc/globals"
-	"github.com/takeaway/handle"
+	"github.com/LittleCurry/takeaway/misc/driver"
+	"github.com/LittleCurry/takeaway/misc/globals"
+	"github.com/LittleCurry/takeaway/handle"
 )
 
 func init() {
