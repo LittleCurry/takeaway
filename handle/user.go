@@ -83,3 +83,8 @@ func UserList(c *gin.Context) {
 	c.JSON(http.StatusOK, usersRes)
 	return
 }
+
+func Test(c *gin.Context) {
+	c.JSON(http.StatusOK, "你好")
+	return
+}
