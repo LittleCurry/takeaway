@@ -4,9 +4,10 @@ import (
 	"time"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"gitlab.com/SiivaVideoStudio/cloud_server/misc/globals"
+
 	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/handle"
 	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/misc/driver"
+	"gitlab.com/SiivaVideoStudio/cloud_server/takeaway/misc/globals"
 )
 
 func init() {
