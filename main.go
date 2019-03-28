@@ -22,11 +22,10 @@ func main() {
 
 	fmt.Println("takeaway :", time.Now().Format("2006-01-02 15:04:05"))
 
-	driver.RedisClient.Set("abc", "ceshiceshi啊", 7*24*time.Hour)
-	res, err1 := driver.RedisClient.Get("abc").Result()
-
-	fmt.Println("res:", res)
-	fmt.Println("err1:", err1)
+	//driver.RedisClient.Set("abc", "ceshiceshi啊", 7*24*time.Hour)
+	//res, err1 := driver.RedisClient.Get("abc").Result()
+	//fmt.Println("res:", res)
+	//fmt.Println("err1:", err1)
 
 	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default() //获得路由实例
